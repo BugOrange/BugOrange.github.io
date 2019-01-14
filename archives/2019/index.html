@@ -53,13 +53,13 @@
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar.jpeg?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.jpeg?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.jpeg?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -254,16 +254,16 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/01/14/my-new-post/" itemprop="url">
+            <a class="post-title-link" href="/2019/01/14/Orange-One-Piece/" itemprop="url">
               
-                <span itemprop="name">my new post</span>
+                <span itemprop="name">Orange One Piece</span>
               
             </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-14T09:44:55+08:00" content="2019-01-14">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-01-14T11:19:21+08:00" content="2019-01-14">
           01-14
         </time>
       </div>
@@ -526,6 +526,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Uvlmv4sER46fP22az4vTfvNn-gzGzoHsz',
+        appKey: 'rqGQolADn3UaxsybMh6yre15',
+        placeholder: '',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
